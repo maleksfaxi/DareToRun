@@ -120,7 +120,7 @@ nav li a:hover {
 #intro{
     padding-top: 55px;
     float: right;
-    width: 31%;
+    width: 35%;
     padding: 5%;
     background-color: white;
     align-content: center;
@@ -147,6 +147,9 @@ nav li a:hover {
     text-align: center;
     font-weight: bold;
     font-family: SF-Pro-Display-Thin, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #intro p{
@@ -361,7 +364,6 @@ font-family: SF-Pro-Display-Thin,sans-serif ;
     vertical-align: middle;
     font-size: 100%;
     font-family: SF-Pro-Display-Thin, sans-serif;
-    padding:5%;
 }
 #text{
     background-image: url(./images/Capture1.PNG);
