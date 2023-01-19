@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Dare To Run</title>
+		<link rel="stylesheet" href="./daretorun_files/reset.css">
+		<link rel="stylesheet" href="./daretorun_files/global.css">
+		<link rel="stylesheet" href="./daretorun_files/w3.css">
+		<link rel="stylesheet" href="./daretorun_files/slideshow1.css">
+		<script type="text/javascript" src="./daretorun_files/js.js.téléchargement"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=true;">
+</head>
+<body>
+	<header>		<nav>
+				<div class="container">
+					<h1 id="brand">DARE TO RUN</h1>
+				    <ul>
+				    	<li><a href="https://maleksfaxi.github.io/DareToRun/index.html#top">Home</a></li>
+				        <li><a href="https://maleksfaxi.github.io/DareToRun/index.html#app">Our Device</a></li>
+				        <li><a href="https://maleksfaxi.github.io/DareToRun/index.html#team">Our Team</a></li>
+				    </ul>
+				</div>
+			</nav>
+</header>
+<section id="top">
+</section>
+<section id="slogan">
+	<p>Assistive Technology for visually impaired people</p>
+	<br>
+</section>
+
+
+
+<section id="main-content">
+
+	<div  id="intro">
+		<img src="./daretorun_files/logo_whitout_brand.png" alt="Team photo">
+	<p id="intro"> 
+Inspired from DAREDEVIL the blind superhero, we propose DARE TO 
+RUN a guidance system that addresses the problem of autonomy of 
+visually impaired people. <br>
+This discreet, portable, and accessible technology:<br>
+ collects visible data through the camera<br>
+ analyses and processes it in order to find the direction that the 
+person should follow<br>
+ guides them through an audio output.<br>
+To enable faster processing, DARE TO RUN provides the user with 
+instantenous feedback to walk them through streets.
+			</p>
+	</div>
+	<div id="story" style=" max-width: 100%;">
+  <img class="mySlides" src="./daretorun_files/device.jpg" style="width: 100%; display: block;">
+  <img class="mySlides" src="./daretorun_files/team2.jpg" style="width: 100%; display: none;">
+  <img class="mySlides" src="./daretorun_files/team3.jpg" style="width: 100%; display: none;">
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off w3-opacity-off" src="./daretorun_files/device.jpg" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="./daretorun_files/team2.jpg" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="./daretorun_files/team3.jpg" style="width:100%" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+	 
+
+</section>
+<br>
+
+<section id="app">
+	<div class="container" id="text">
+		<br>
+		<h1>Dare To Run</h1>
+		
+		<p>                                Our Semester Project</p>
+		<br><br>
+			<p><b style="font-family: Raleway, sans-serif; font-size:  150%;font-weight: bold;">Dare To Run.. Dare To Fly</b></p>
+		<br>
+		<div class="container" style="height: 100px;margin-top: 5%;">
+			<div id="descri">
+		<p>DARE TO RUN is not only an 
+affordable and efficient guidance system 
+for visually impaired people but an 
+eye-opening path for them to walking, 
+running, living and being autonomous. 
+Wait for DARE TO FLY, the eco-friendly 
+update of DARE TO RUN which will be an 
+open-source mobile app available on 
+pre-owned smartphones </p>
+		<p></p></div>
+		</div>
+		<br>
+<img src="./daretorun_files/device.jpg" id="device">
+	</div>
+
+		
+	
+</section>
+
+<hr>
+<section id="team">
+	<br>
+	<h1>Our Team</h1>
+
+
+	<div class="column">
+		<img src="./daretorun_files/villon.jpg">
+		<br>
+		<h2>Villon CHIEU</h2>
+
+	</div>
+	<div class="column">
+		<img src="./daretorun_files/malek2.jpg">
+		<br>
+		<h2>Malek SFAXI</h2>
+
+	</div>
+	<div class="column">
+		<img src="./daretorun_files/elena.jpg">
+		<br>
+		<h2>Elena LASSALLE</h2>
+
+	</div>
+	<div class="column">
+		<img src="./daretorun_files/madleen.jpg">
+		<br>
+		<h2>Madleen JEAN</h2>
+	</div>
+	<div class="column">
+		<img src="./daretorun_files/william.jpg">
+		<br>
+		<h2>William  CHEN</h2>
+
+	</div>
+
+</section>
+<section id="sm">
+	<div id="descri" style="float: left;">
+		<h1> Mentored by:</h1>
+	</div>
+	<div class="column", id="ihsen">
+		<img src="./daretorun_files/mentor.jpg">
+		<br>
+		<h2>Melek Önen</h2>
+
+</section>	
+
+<br>
+<footer>
+			<div class="container">
+			
+				<p id="copyrights">Copyrights © 2023 EURECOM Studios</p>
+			</div>
+		
+</footer>
+
+
+
+
+
+</body></html>
