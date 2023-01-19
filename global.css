@@ -11,12 +11,45 @@
   src: url("./Marvel-Regular.ttf") format("truetype");
 }
 
+.light-mode {
+  background-color: white;
+  color: #333;
+}
+
+.light-mode #slogan{
+    background-color: #333;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+.dark-mode #slogan{
+    background-color: red;
+}
+
+.dark-mode #intro{
+    background-color: black;
+    color: white;
+}
+
+
+
+#toggle-mode-button{
+margin: 19px 10px 25px 10px;
+font-family:'Marvel';
+background-color:red;
+color:white;
+
+}
 
 
 
 
 
-body {color: #333; 
+body {; 
     font-family: 'SF-Pro-Display-Thin', sans-serif;
     padding-top: 66px;
 }
