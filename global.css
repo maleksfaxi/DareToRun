@@ -265,6 +265,7 @@ font-family: SF-Pro-Display-Thin,sans-serif ;
 
 /* Center the video vertically and horizontally within its container */
 .video-container {
+  width:75%;
   display: flex;
   align-items: center;
   justify-content: center;
