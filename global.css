@@ -4,11 +4,11 @@
 }
 @font-face{
   font-family: 'Raleway';
-  src: url(./Raleway-Thin.ttf);
+  src: url(./Raleway-Italic.ttf);
 }
-@font-face{
-  font-family: 'Liar Script';
-  src: url(./Liar Script.ttf);
+@font-face {
+  font-family: "Marvel";
+  src: url("./Marvel-Regular.ttf") format("truetype");
 }
 
 
