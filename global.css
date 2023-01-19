@@ -400,6 +400,9 @@ font-family: SF-Pro-Display-Thin,sans-serif ;
     height: 100%;
 
 }
+#text img{
+  width:100%;
+}
 
 .button {
     cursor: pointer;
