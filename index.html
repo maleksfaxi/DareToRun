@@ -123,6 +123,33 @@ pre-owned smartphones </p>
 <img src="./device.jpg" id="device">
 	</div>
 
+<video id="my-video" controls>
+  <source src="./demo_final.mp4" type="video/mp4">
+</video>
+
+<script>
+  // Get the video element
+  var video = document.getElementById("my-video");
+
+  // Create an intersection observer
+  var observer = new IntersectionObserver(function(entries) {
+    // Check if the video is in the viewport
+    if (entries[0].isIntersecting) {
+      // Start the video
+      video.play();
+      // Stop observing the video
+      observer.unobserve(video);
+    }
+  });
+
+  // Start observing the video
+  observer.observe(video);
+</script>
+
+
+
+
+
 		
 	
 </section>
