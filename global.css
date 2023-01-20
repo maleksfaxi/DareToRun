@@ -21,7 +21,7 @@
 }
 
 .dark-mode {
-  background-color: black;
+  background: black;
   color: white;
 }
 
@@ -38,10 +38,10 @@
 
 
 #toggle-mode-button{
-margin: 19px 10px 25px 10px;
-font-family:'Marvel';
-background-color:red;
-color:white;
+    margin: 19px 10px 25px 10px;
+    font-family:'Marvel';
+    background-color:red;
+    color:white;
 
 }
 
@@ -49,7 +49,7 @@ color:white;
 
 
 
-body {; 
+body {
     font-family: 'SF-Pro-Display-Thin', sans-serif;
     padding-top: 66px;
 }
@@ -131,7 +131,7 @@ nav li a:hover {
 }
 #slogan{
     background-color: #333;
-    height: 55px;
+    height: 45px;
     align-content: center;
 }
 #slogan p{
@@ -155,7 +155,6 @@ nav li a:hover {
     float: left;
     width: 37%;
     padding: 5%;
-    background-color: white;
     align-content: center;
 }
 
@@ -186,8 +185,9 @@ nav li a:hover {
 }
 
 #intro p{
-font-family: SF-Pro-Display-Thin,sans-serif ;
-width: 100%;
+    text-align: justify;
+    font-family: SF-Pro-Display-Thin,sans-serif ;
+    width: 100%;
 }
 
 #story{
@@ -205,7 +205,7 @@ width: 100%;
     vertical-align: middle;
     margin-left: 0%;
 
-  }
+}
 #ligne{
     align-content: center;
     width:10%;
@@ -263,53 +263,56 @@ hr{
     color: #8a80c3;
 }
 .column p{
-text-align: center;
-font-family: SF-Pro-Display-Thin,sans-serif ;
+    text-align: center;
+    font-family: SF-Pro-Display-Thin,sans-serif ;
 }
 
 #sm{
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    height: 100%;
 
 }
 #ihsen{
     width: 25%;
     margin-top : 0%; 
-    margin-right: 15%}
+    margin-right: 15%
+}
+
 #descri h1{
-    width: 100%;
-    font-family: Raleway, sans-serif;
-    font-size: 350%;
-    text-align: center;
-    margin-left: 15%;
-    margin-top: 25%;
+        width: 100%;
+        font-family: Raleway, sans-serif;
+        font-size: 350%;
+        text-align: center;
+        margin-left: 15%;
+        margin-top: 25%;
 
-}
+    }
 
-/* Center the video container horizontally and vertically on the webpage */
-.video-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-/* Make the video container take up 75% of the page */
-.video-container video {
-  width: 75%;
-  height: 75%;
-  object-fit: contain;
-}
-
-/* Make the video container take up 100% of the page on screens smaller than 600px */
-@media screen and (max-width: 600px) {
-  .video-container video {
-    width: 100%;
-    height: 100%;
+    /* Center the video container horizontally and vertically on the webpage */
+    .video-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin:15px;
   }
+
+  /* Make the video container take up 75% of the page */
+  .video-container video {
+      width: 75%;
+      height: 75%;
+      object-fit: contain;
+  }
+
+  /* Make the video container take up 100% of the page on screens smaller than 600px */
+  @media screen and (max-width: 600px) {
+      .video-container video {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
@@ -323,86 +326,15 @@ font-family: SF-Pro-Display-Thin,sans-serif ;
 }
 
 /* Hide the images by default */
-.mySlides1 {
-    display: none;
-    align-content: center;
-    vertical-align: middle;
-}
-.img{
-    margin-left: 40%;}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: grey;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+.mySlides img{
+    padding:15%;
+    width: 100%;
+    padding-top:0;
+    }
 
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-#app{
+  #app{
     height: 100%;
     margin-bottom: 5%;
 }
@@ -458,11 +390,11 @@ font-family: SF-Pro-Display-Thin,sans-serif ;
     border-radius: 0;
 }
 
-    #descri{
-        height: 100%;
-        float: right;
-        align-content: center;
-    }
+#descri{
+    height: 100%;
+    float: right;
+    align-content: center;
+}
 
 
 
@@ -475,7 +407,7 @@ footer {
     float: left;
     width: 100%;
     position: relative;
-    height: 50px;
+    height: 100px;
     vertical-align: bottom;
 }
 
@@ -522,7 +454,7 @@ footer p{
 }
 @media(max-width: 901px)
 {
-#story{ width: 65%;
+    #story{ width: 65%;
         margin: 15% ;
 
     }
@@ -552,14 +484,14 @@ footer p{
     footer {
         margin-bottom: 0;
     }
-#device{
-width:100%;
-}
+    #device{
+        width:100%;
+    }
     #team{
-        
+
         background-image: none;
         width: 75%;
-float:middle;
+        float:middle;
         height: 700px;
     }
     #team h1{
@@ -567,26 +499,26 @@ float:middle;
     }
     .column img {
 
-    width: 70%;
-    max-width:100%;
-    border-radius: 50%;
-    margin: 0%;
-    
-}
+        width: 70%;
+        max-width:100%;
+        border-radius: 50%;
+        margin: 0%;
+
+    }
     #ihsen img {
 
-    width: 70%;
-    max-width:100%;
-    border-radius: 50%;
-    margin: 0 25% 0 15% ;
-    align-self: center;
-    
-}
+        width: 70%;
+        max-width:100%;
+        border-radius: 50%;
+        margin: 0 25% 0 15% ;
+        align-self: center;
+
+    }
 
     hr{
         border-color:#fff5f53d;
     }
-     #descri{
+    #descri{
         float: none;
         width: 100%;
         align-content: center;
@@ -600,16 +532,16 @@ float:middle;
         margin-left: 5%;
     }
     #descri h1{
-    width: 100%;
-    font-family: Raleway, sans-serif;
-    font-size: 350%;
-    text-align: center;
-    margin: 0;
+        width: 100%;
+        font-family: Raleway, sans-serif;
+        font-size: 350%;
+        text-align: center;
+        margin: 0;
 
-}
-#top h2{
-    font-size: 350%;
-}
+    }
+    #top h2{
+        font-size: 350%;
+    }
 
 }
 
@@ -630,44 +562,47 @@ float:middle;
         margin-bottom: 0;
     }
     #team{
-        background-color: #fff;
         background-image: none;
         width: 100%;
         height: 100%;
     }
-    #team h1{
-        color: #333;
-    }
+    
     .column img {
 
-    width: 70%;
-    max-width:100%;
-    border-radius: 50%;
-    margin: 0%;
-    
-}
+        width: 70%;
+        max-width:100%;
+        border-radius: 50%;
+        margin: 0%;
+
+    }
+
+    .mySlides img{
+        padding: 0;
+    }
+
+
     hr{
         border-color: #fff5f53d;
     }
     #app{
         padding-bottom: 15%;
     }
-#device{
-width:100%;
-}
+    #device{
+        width:100%;
+    }
     footer ul li img
-{
-    margin: 15px;
-}
-.button{
+    {
+        margin: 15px;
+    }
+    .button{
         margin-left: 5%;
     }
 }
 @media(max-width: 500px)
 {#top{
     height:150px;
- #device{
-width:100%;
-}
+    #device{
+        width:100%;
+    }
     
 }
