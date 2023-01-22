@@ -517,6 +517,7 @@ footer p{
     }
     #team h1{
         font-size: 300%;
+        padding-top: 25%
     }
     .column img {
 
@@ -621,9 +622,6 @@ footer p{
 
     hr{
         border-color: transparent;
-    }
-    #app{
-        padding-bottom: 15%;
     }
     #device{
         width:100%;
