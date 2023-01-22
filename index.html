@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="./global.css">
 	<link rel="stylesheet" href="./w3.css">
 	<link rel="stylesheet" href="./slideshow1.css">
-	<script type="text/javascript" src="./js.js.téléchargement"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="./js.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=true;">
 </head>
 <body>
@@ -56,36 +57,6 @@
 		<img class="mySlides" src="./test.png" >
 	</div>
 
-	<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-		function plusDivs(n) {
-			showDivs(slideIndex += n);
-		}
-
-		function currentDiv(n) {
-			showDivs(slideIndex = n);
-		}
-
-		function showDivs(n) {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("demo");
-			if (n > x.length) {slideIndex = 1}
-				if (n < 1) {slideIndex = x.length}
-					for (i = 0; i < x.length; i++) {
-						x[i].style.display = "none";
-					}
-					for (i = 0; i < dots.length; i++) {
-						dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-					}
-					x[slideIndex-1].style.display = "block";
-					dots[slideIndex-1].className += " w3-opacity-off";
-				}
-			</script>
-
-
 		</section>
 		<br>
 
@@ -104,14 +75,10 @@
 						</div>
 						<br>
 						<img src="./device.png" id="device">
-					<div class="video-container">
-						<video id="my-video" controls>
-							<source src="./demo_final.mp4" type="video/mp4">
-							</video>
-						</div>
+
 						<script>
 								  // Get the video element
-								  var video = document.getElementById("my-video");
+								  var video = document.getElementById("slider");
 
 								  // Create an intersection observer
 								  var observer = new IntersectionObserver(function(entries) {
@@ -128,6 +95,26 @@
 								  observer.observe(video);
 								</script>
 							</section>
+
+
+	<section>
+		<div class="container" id="video">
+		<video id="slider" controls>
+			<source src="video/video1.mp4" type="video/mp4">
+		</video>
+		<ul class="navigation">
+			<li onclick="videoselector('video/video1.mp4')"><img src="images/video1.jpg" height="100px" width="150px"></li>
+			<li onclick="videoselector('video/video2.mp4')"><img src="images/video2.jpg" height="100px" width="150px"></li>
+		</ul>
+	</div>
+	</section>
+	<script type="text/javascript">
+		function videoselector (videoLink) {
+			document.getElementById('slider').src=videoLink;
+		}
+	</script>
+
+
 
 							<hr>
 							<section id="team">

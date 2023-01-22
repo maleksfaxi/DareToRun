@@ -38,6 +38,7 @@
 
 
 #toggle-mode-button{
+    padding:3px;
     margin: 19px 10px 25px 10px;
     font-family:'Marvel';
     background-color:red;
@@ -225,6 +226,8 @@ hr{
     align-content: center;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    font-size: 350%;
+    margin-top: 10%;
 }
 
 #team div{
@@ -402,6 +405,13 @@ hr{
     align-content: center;
 }
 
+#video{
+    width:100%;
+    padding: 15%;
+    padding-top: 5%;
+}
+
+
 
 #team_members{
     width: 100%;
@@ -463,6 +473,8 @@ footer p{
 }
 @media(max-width: 901px)
 {
+
+
     #story{ width: 65%;
         margin: 15% ;
 
@@ -549,6 +561,10 @@ footer p{
     }
     #top h2{
         font-size: 350%;
+    }
+
+    #video{
+        padding:5%;
     }
 
 
