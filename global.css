@@ -536,7 +536,7 @@ footer p{
     }
 
     hr{
-        border-color:#fff5f53d;
+        border-color:transparent;
     }
     #descri{
         width: 100%;
@@ -620,7 +620,7 @@ footer p{
 
 
     hr{
-        border-color: #fff5f53d;
+        border-color: transparent;
     }
     #app{
         padding-bottom: 15%;
