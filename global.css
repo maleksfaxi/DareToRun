@@ -279,7 +279,8 @@ hr{
 #ihsen{
     width: 25%;
     margin-top : 0%; 
-    margin-right: 15%
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 #descri h1{
@@ -287,7 +288,7 @@ hr{
         font-family: Raleway, sans-serif;
         font-size: 350%;
         text-align: center;
-        margin-left: 15%;
+        margin-left: 35%;
         margin-top: 25%;
 
     }
@@ -403,6 +404,7 @@ hr{
     height: 100%;
     float: left;
     align-content: center;
+    margin-left: 15%;
 }
 
 #video{
@@ -542,6 +544,7 @@ footer p{
     #descri{
         width: 100%;
         align-content: center;
+        margin-left: 0;
     }
     #ihsen{
         width: 100%;
